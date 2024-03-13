@@ -16,7 +16,7 @@ description: "My Links"
 		</div>
 		{% if item.title != item.description %}
 		<div>
-			<small>{{ item.description | truncate: 250 }}</small>
+			<small>{{ item.description }}</small>
 		</div>
 		{% endif %}
 	</li>
