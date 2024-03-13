@@ -75,6 +75,10 @@ body {
     margin-bottom: 0;
 }
 
+.mainFrame .no-border {
+	border-right: 0 !important
+}
+
 @media (min-width:991px) {
     .mainFrame {
         border-right: 1px solid grey;
