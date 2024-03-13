@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include scripts.html %}
+    <div class="container container-rounded">
+        <div class="row header">
+            {% include header.html %}
+        </div>   
+        <div class="row content-row">
+            <div id="content" class="col-12 no-float mainFrame dont-break-out">
+                <h4>Redirecting...</h4>
+				<p>
+					Click <a href="{{ page.redirect.to }}">here</a> if you are not redirected
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 footer">
+                {% include footer.html %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
