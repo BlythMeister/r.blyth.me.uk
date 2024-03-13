@@ -16,7 +16,7 @@ description: "Amazon Affiliate Links"
 		</div>
 		{% if item.title != item.description %}
 		<div>
-			<small>{{ item.description }}</small>
+			<small>{{ item.description | truncate: 250 }}</small>
 		</div>
 		{% endif %}
 	</li>
