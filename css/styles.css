@@ -10,6 +10,7 @@ body {
     background: -webkit-linear-gradient(16deg, rgba(150,150,150,1) 0%, rgba(27,139,255,1) 100%);
     background: linear-gradient(16deg, rgba(150,150,150,1) 0%, rgba(27,139,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#969696",endColorstr="#1b8bff",GradientType=1);
+    background-attachment: fixed;
 }
 
 .container-rounded {
