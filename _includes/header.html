@@ -1,5 +1,5 @@
 <div class="col-lg-12">
     <h1>
-        "Short" Links
+        {{ page.title }}{% if page.title != page.description %} - <small>{{ page.description }}</small>{% endif %}
     </h1>
 </div>
