@@ -1,5 +1,5 @@
 ---
-title: Amazon Affiliate
+title: Amazon Affiliate Links
 description: "Amazon Affiliate Links"
 ---
 
@@ -11,7 +11,14 @@ description: "Amazon Affiliate Links"
 
 	{% if item_crumbs.size == 1 and item.name == 'index.md' %}
 	<li>
-		<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+		<div>
+			<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+		</div>
+		{% if item.title != item.description %}
+		<div>
+			<small>{{ item.description }}</small>
+		</div>
+		{% endif %}
 	</li>
 	{% endif %}
 {% endfor %}
