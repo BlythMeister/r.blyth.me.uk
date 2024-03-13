@@ -5,22 +5,11 @@ html {
 body {
     padding: 15px;
     margin: 0;
-    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.18, rgb(74, 12, 107)), color-stop(0.87, rgb(102, 153, 102)));
-    background: -moz-linear-gradient(top, #ABCDEF 0%, #FFFFFF 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ABCDEF), color-stop(100%, #FFFFFF));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #ABCDEF 0%, #FFFFFF 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #ABCDEF 0%, #FFFFFF 100%);
-    /* Opera11.10+ */
-    background: -ms-linear-gradient(top, #ABCDEF 0%, #FFFFFF 100%);
-    /* IE10+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ABCDEF', endColorstr='#FFFFFF', GradientType=0);
-    /* IE6-9 */
-    background: linear-gradient(top, #ABCDEF 0%, #FFFFFF 100%);
-    /* W3C */
-    background-attachment: fixed;
+    background: rgb(150,150,150);
+    background: -moz-linear-gradient(16deg, rgba(150,150,150,1) 0%, rgba(27,139,255,1) 100%);
+    background: -webkit-linear-gradient(16deg, rgba(150,150,150,1) 0%, rgba(27,139,255,1) 100%);
+    background: linear-gradient(16deg, rgba(150,150,150,1) 0%, rgba(27,139,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#969696",endColorstr="#1b8bff",GradientType=1);
 }
 
 .container-rounded {
@@ -113,4 +102,17 @@ body {
     border-radius: 50%;
     margin-bottom: 10px;
     box-shadow: 0 0 10px grey;
+}
+
+.sidebar .bottomItem {
+    border-top: 1px solid grey;
+    padding-top: 10px;
+}
+
+.devide-bottom {
+    border-bottom: 1px solid grey;
+}
+
+.devide-top {
+    border-top: 1px solid grey;
 }
