@@ -75,8 +75,11 @@ body {
     margin-bottom: 0;
 }
 
-.mainFrame .no-border {
-	border-right: 0 !important
+.mainFrame-no-border {
+	padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
 }
 
 @media (min-width:991px) {

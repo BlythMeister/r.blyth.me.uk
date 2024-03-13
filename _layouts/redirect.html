@@ -2,10 +2,10 @@
 <html lang="{{ site.lang }}">
 <head>
     {% include head.html %}
-	<!--<link rel="canonical" href="{{ page.redirect.to }}">-->
-    <!--<script>location="{{ page.redirect.to }}"</script>-->
-    <!--<meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">-->
-    <!--<meta name="robots" content="noindex">-->
+	<link rel="canonical" href="{{ page.redirect.to }}">
+    <script>location="{{ page.redirect.to }}"</script>
+    <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+    <meta name="robots" content="noindex">
 </head>
 <body>
     {% include scripts.html %}
@@ -14,7 +14,7 @@
             {% include header.html %}
         </div>   
         <div class="row content-row">
-            <div id="content" class="col-lg-12 mainFrame no-border">
+            <div id="content" class="col-lg-12 mainFrame-no-border">
                 <h3>Redirecting...</h3>
 				<p>
 					You are being redirected to {{ page.redirect.to }}
