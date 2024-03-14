@@ -18,13 +18,13 @@ layout: none
 					<pubDate>{{ item.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 					<link>{{ site.url }}{{ item.url | relative_url }}</link>
 					<guid isPermaLink="true">{{ site.url }}{{ item.url | relative_url }}</guid>
-					{% assign page_image = page.image %}
-					{% if page_image %}
-						{% unless page_image contains "://" %}
-							{% assign page_image = page_image | absolute_url %}
+					{% assign item_image = item.image.path | default: item.image %}
+					{% if item_image %}
+						{% unless item_image contains "://" %}
+							{% assign item_image = item_image | absolute_url %}
 						{% endunless %}
-						<media:thumbnail url="{{ page_image | xml_escape }}" />
-						<media:content url="{{ page_image | xml_escape }}" type="image/jpeg"/>
+						<media:thumbnail url="{{ item_image | xml_escape }}" />
+						<media:content url="{{ item_image | xml_escape }}" type="image/jpeg"/>
 					{% endif %}
 				</item>
 			{% endif %}
