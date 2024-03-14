@@ -1,0 +1,33 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>BlythMeister BHAFC</title>
+		<description>Links Created</description>		
+		<link>https://r.blyth.me.uk/bhafc</link>
+		{% for item in site.pages %}
+			{% assign item_crumbs = item.url | remove_first: page.dir | split: '/' %}
+			{% if item_crumbs.size == 1 and item.name == 'index.md' %}
+				<item>
+					<title>{{ item.title | xml_escape }}</title>
+					<summary>{{ item.description | xml_escape }}</summary>
+					<description>{{ item.description | xml_escape }}</description>
+					<content:encoded>{{ item.description | xml_escape }}</content:encoded>
+					<pubDate>{{ item.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+					<link>{{ site.url }}{{ item.url | relative_url }}</link>
+					<guid isPermaLink="true">{{ site.url }}{{ item.url | relative_url }}</guid>
+					{% assign item_image = item.image.path | default: item.image %}
+					{% if item_image %}
+						{% unless item_image contains "://" %}
+							{% assign item_image = item_image | absolute_url %}
+						{% endunless %}
+						<media:thumbnail url="{{ item_image | xml_escape }}" />
+						<media:content url="{{ item_image | xml_escape }}" type="image/jpeg"/>
+					{% endif %}
+				</item>
+			{% endif %}
+		{% endfor %}
+	</channel>
+</rss>
