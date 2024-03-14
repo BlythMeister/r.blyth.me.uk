@@ -18,7 +18,7 @@ layout: none
 					<pubDate>{{ item.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 					<link>{{ site.url }}{{ item.url | relative_url }}</link>
 					<guid isPermaLink="true">{{ site.url }}{{ item.url | relative_url }}</guid>
-					{% assign page_image = page.image.path | default: page.image %}
+					{% assign page_image = page.image %}
 					{% if page_image %}
 						{% unless page_image contains "://" %}
 							{% assign page_image = page_image | absolute_url %}
