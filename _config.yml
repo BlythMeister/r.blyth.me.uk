@@ -9,9 +9,9 @@ lang: en_GB
 GoogleAnalytics: G-51T4HE9ZTW
 
 #Webmaster tools
-#webmaster_verifications:
-#  google: HV11HFJBxWBjSBdvj2X1ARYcyV0gkh2RC2RN-BBPOQc
-#  bing: 70C9C40BE160CF8A17564E2F00B21581
+webmaster_verifications:
+  google: HV11HFJBxWBjSBdvj2X1ARYcyV0gkh2RC2RN-BBPOQc
+  bing: 70C9C40BE160CF8A17564E2F00B21581
 
 #Social
 twitter:

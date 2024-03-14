@@ -1,3 +1,43 @@
 <div class="content">
-    {{ content }}
+	<div class="row">
+		{% assign i = 0 %}
+		{% for item in site.pages %}
+			{% assign item_crumbs = item.url | remove_first: page.dir | split: '/' %}
+			{% if item_crumbs.size == 1 and item.name == 'index.md' %}
+				{% assign mod = i | modulo: 3 %}
+				{% assign i = i | plus:1 %}
+				<!--
+					forloop.index={{ forloop.index }}
+					i={{ i }}
+					mod={{ mod }}
+				-->
+				{% if mod == 0 %}
+					</div>
+					<div class="row">
+				{% endif %}
+				<div class="col-sm-4">
+					<div class="panel panel-default panel-margin">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+							</h3>
+						</div>
+						<div class="panel-body">
+							{% if item.image != site.logo %}
+								<img class="panel-img" src="{{ item.image }}" />
+							{% endif %}
+							{% if item.title != item.description %}
+								<p>{{ item.description }}</p>
+							{% endif %}
+						</div>
+						{% if item.date %}
+							<div class="panel-footer">			
+								<span>Added {{ item.date }}</span>
+							</div>
+						{% endif %}
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
 </div>

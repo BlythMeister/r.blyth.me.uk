@@ -125,3 +125,18 @@ body {
 .devide-top {
     border-top: 1px solid grey;
 }
+
+.panel-img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: 6px;
+    max-height: 150px;
+    max-width: 100%;
+}
+
+.redirect-img {
+    max-height: 300px;
+    max-width: 300px;
+}
