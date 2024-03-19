@@ -6,9 +6,9 @@
     <script>
         setTimeout(() => {
             window.location="{{ page.redirect.to }}"
-        }, "2000");
+        }, "4000");
     </script>
-    <meta http-equiv="refresh" content="2; url={{ page.redirect.to }}">
+    <meta http-equiv="refresh" content="4; url={{ page.redirect.to }}">
 </head>
 <body>
     {% include scripts.html %}
@@ -18,7 +18,7 @@
         </div>   
         <div class="row content-row">
             <div id="content" class="col-lg-12 mainFrame-no-border">
-                <h3><span class="glyphicon glyphicon-refresh spinning"></span> Redirecting...</h3>
+                <h3><span class="glyphicon glyphicon-refresh spinning"></span> Redirecting Please Wait...</h3>
 				<p>
 					You are being redirected to {{ page.redirect.to }}
 				</p>
