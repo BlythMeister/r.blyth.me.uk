@@ -1,9 +1,8 @@
 ---
-title: "DEAL OF THE DAY 23rd March 2024: Blink 2 Camera & Doorbell Set"
-description: "Amazon Spring Sale 2024 - Blink 2 Camera & Doorbell Set 59% off.
-RRP £214.98. Deal price £87.99.
-#camera #doorbell #security #smarthome #actnow #Amazon #deal #dealoftheday #ad #affiliate"
-redirect_to: https://amzn.to/4anvzvi
-image: /images/dotd/20240323.jpg
-date: 2024-03-23 06:00:00 -0000
+title: "DEAL OF THE DAY 24th March 2024: Ninja Air Fryer MAX PRO"
+description: "Amazon Spring Sale 2024 - Ninja Air Fryer MAX PRO 29% off.
+RRP £1.69.99 Deal price £119.99. #airfryer #ninja #Amazon #discount #deals #dealoftheday #ad #affiliate"
+redirect_to: https://amzn.to/3IRp3RO
+image: /images/dotd/20240324.jpg
+date: 2024-03-24 06:00:00 -0000
 ---
