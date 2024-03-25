@@ -1,8 +1,8 @@
 ---
-title: "DEAL OF THE DAY 24th March 2024: Ninja Air Fryer MAX PRO"
-description: "Amazon Spring Sale 2024 - Ninja Air Fryer MAX PRO 29% off.
-RRP £1.69.99 Deal price £119.99. #airfryer #ninja #Amazon #discount #deals #dealoftheday #ad #affiliate"
-redirect_to: https://amzn.to/3IRp3RO
-image: /images/dotd/20240324.jpg
-date: 2024-03-24 06:00:00 -0000
+title: "DEAL OF THE DAY 25th March 2024: Oral-B Pro 3 Electric Toothbrush"
+description: "Amazon Spring Sale 2024 - Oral-B Pro 3 Electric Toothbrush 67% off.
+RRP £100 Deal price £33.44 #toothbrush #springsale #Amazon #discount #deals #deal #dealoftheday #ad #affiliate"
+redirect_to: https://amzn.to/3vpQ6As
+image: /images/dotd/20240325.jpg
+date: 2024-03-25 06:00:00 -0000
 ---
